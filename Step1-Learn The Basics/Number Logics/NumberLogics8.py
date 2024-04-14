@@ -1,3 +1,5 @@
+# Write a program to calculate G.C.D or HCF of two numbers.
+# Sol :2
 def gcd(num1,num2): 
     if num2>num1:
         mn=num1
