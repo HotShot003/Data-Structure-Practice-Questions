@@ -6,9 +6,9 @@ def is_prime(num):
         return f"{num} is Not Prime"
     i=5
     while i*i<num:
-        if n%i==0 or n%(i+2)==0:
+        if num%i==0 or num%(i+2)==0:
             return f"{num} is Not Prime"
         i+=6
     return f"{num} is Prime"
 
-print(is_prime(7))
+print(is_prime(37))
