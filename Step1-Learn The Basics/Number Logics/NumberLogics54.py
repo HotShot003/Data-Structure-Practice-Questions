@@ -4,16 +4,16 @@ def powerFunc(m,n):
     
     p=1
     while n:
-        p=p*m
-        n=n-1
+        p*=m
+        n-=1
     return p
 
 #To calculate the digits
 def lenFunc(n):
     c=0
     while n :
-        n=n//10
-        c=c+1
+        n//=10
+        c+=1
     return c
 
 def is_Armstrong(n):
@@ -22,8 +22,8 @@ def is_Armstrong(n):
     i=1
     sum=0
     while i<=l:
-        sum = sum + powerFunc(n%10,l)
-        n=n//10
+        sum +=powerFunc(n%10,l)
+        n//=10
         i+=1
     return True if sum == original_number else False      
 
