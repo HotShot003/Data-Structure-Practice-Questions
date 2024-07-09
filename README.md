@@ -1,8 +1,12 @@
 # Data Structures and Algorithms Practice Questions
 
-Welcome to my Data Structures and Algorithms practice repository! 
+## What's Inside
 
-Here, you'll find a curated collection of practice questions to help you enhance your problem-solving skills and deepen your understanding of key concepts.
+- Comprehensive Practice Questions: Explore a wide range of questions categorized by difficulty levels. Each question is designed to target specific concepts in data structures and algorithms.
+
+- Detailed Solutions: Each question is accompanied by a detailed solution, including a step-by-step explanation of the thought process and code implementation.
+
+- Code Snippets: You'll find code snippets in multiple programming languages (e.g., Python) to cater to your preferred language and improve your versatility in solving problems.
 
 # Introduction
 
