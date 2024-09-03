@@ -21,7 +21,6 @@
 
 # The number of nodes in the tree is in the range [0, 100].
 # -100 <= Node.val <= 100
-
 class Node:
     def __init__(self, data):
         self.left = None
@@ -58,20 +57,40 @@ class BinaryTree:
                     queue.append(current.right)
                 idx += 1
     
-    def PreorderTraversal(self, node, result):
+    def PreorderTraversal_Recur(self, node, result):
         if node is None:
             return
         result.append(node.data)
-        self.PreorderTraversal(node.left, result)
-        self.PreorderTraversal(node.right, result)
-
+        self.PreorderTraversal_Recur(node.left, result)
+        self.PreorderTraversal_Recur(node.right, result)
     
+    def PreorderTraversal_Iter(self, node):
+        res = []  
+        stk = [node]
+        
+        while stk:
+            node = stk.pop()
+            
+            if node:
+                res.append(node.data)
+                stk.append(node.right)  # Push right child first
+                stk.append(node.left)   # Push left child after to visit first
+        
+        return res
 
+# Initialize the binary tree
 sol = BinaryTree()
 
-sol.insertLevelOrder(values=[1,2,3,4,5,6,7])
+# Insert values level by level
+sol.insertLevelOrder(values=[1, 2, 3, 4, 5, 6, 7])
 
-preorder = []
+# Perform recursive preorder traversal
+preorder_Recur = []
+sol.PreorderTraversal_Recur(sol.root, preorder_Recur)
 
-sol.PreorderTraversal(sol.root,preorder)        
-print(preorder)
+# Perform iterative preorder traversal
+preorder_Iter = sol.PreorderTraversal_Iter(sol.root)
+
+# Print both results
+print("Recursive Preorder Traversal:", preorder_Recur)
+print("Iterative Preorder Traversal:", preorder_Iter)
