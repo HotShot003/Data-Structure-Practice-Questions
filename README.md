@@ -1,4 +1,4 @@
-# Data Structures and Algorithms Practice Questions
+# Data Structures and Algorithms Practice Questions In Python
 
 ## What's Inside !
 
