@@ -87,8 +87,28 @@ class BinaryTree:
         self.PostorderTraversal(node.right,res)
         res.append(node.data) 
 
-
-
+    def IterPostOrder(self,node):
+        
+        if not node :
+            return []
+        
+        stk1 = [node]
+        stk2 = []
+        res = []
+        
+        while stk1:
+            node = stk1.pop()
+            stk2.append(node)
+            
+            if node.left:
+                stk1.append(node.left)
+            if node.right:
+                stk1.append(node.right)
+        while stk2:
+            node = stk2.pop()
+            res.append(node.data)
+        return res    
+            
 sol = BinaryTree()
 
 sol.insertLevelOrder(values=[1,2,3,4,5,6,7])
@@ -97,3 +117,4 @@ Postorder = []
 
 sol.PostorderTraversal(sol.root,Postorder)        
 print(Postorder)                          
+print(sol.IterPostOrder(sol.root))
