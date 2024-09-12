@@ -73,15 +73,10 @@ class BinaryTree:
                 stk.append(node.left)   # Push left child after to visit first
         
         return res
-
 sol = BinaryTree()
-
 sol.insertLevelOrder(values=[1, 2, 3, 4, 5, 6, 7])
-
 preorder_Recur = []
 sol.PreorderTraversal_Recur(sol.root, preorder_Recur)
-
 preorder_Iter = sol.PreorderTraversal_Iter(sol.root)
-
 print("Recursive Preorder Traversal:", preorder_Recur)
 print("Iterative Preorder Traversal:", preorder_Iter)
