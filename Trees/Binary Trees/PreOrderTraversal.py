@@ -74,18 +74,14 @@ class BinaryTree:
         
         return res
 
-# Initialize the binary tree
 sol = BinaryTree()
 
-# Insert values level by level
 sol.insertLevelOrder(values=[1, 2, 3, 4, 5, 6, 7])
 
-# Perform recursive preorder traversal
 preorder_Recur = []
 sol.PreorderTraversal_Recur(sol.root, preorder_Recur)
 
 preorder_Iter = sol.PreorderTraversal_Iter(sol.root)
 
-# Print both results
 print("Recursive Preorder Traversal:", preorder_Recur)
 print("Iterative Preorder Traversal:", preorder_Iter)
