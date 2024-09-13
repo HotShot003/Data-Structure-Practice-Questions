@@ -51,7 +51,6 @@ class BinaryTree:
                 queue.append(current.left)
             idx += 1
             
-            # Ensure there is still a right child to process
             if idx < len(values):
                 if values[idx] != -1:
                     current.right = Node(values[idx])
@@ -61,11 +60,8 @@ class BinaryTree:
     def InorderTraversal_Recur(self, node, result):
         if node is None:
             return
-        # Traverse the left subtree first
         self.InorderTraversal_Recur(node.left, result)
-        # Visit the root node
         result.append(node.data)
-        # Traverse the right subtree
         self.InorderTraversal_Recur(node.right, result)
     
     def InorderTraversal_Iter(self, node):
@@ -73,35 +69,26 @@ class BinaryTree:
         stk = []
         current = node
         
-        # While there are unvisited nodes
         while current or stk:
-            # Go as left as possible
             while current:   
                 stk.append(current)
                 current = current.left
             
-            # Visit the node at the top of the stack
             current = stk.pop()
             res.append(current.data)
             
-            # Move to the right subtree  
             current = current.right
             
         return res
 
-# Initialize the binary tree
 sol = BinaryTree()
 
-# Insert values level by level
 sol.insertLevelOrder(values=[1, 2, 3, 4, 5, 6, 7])
 
-# Perform recursive inorder traversal
 inorder_Recur = []
 sol.InorderTraversal_Recur(sol.root, inorder_Recur)
 
-# Perform iterative inorder traversal
 inorder_Iter = sol.InorderTraversal_Iter(sol.root)
 
-# Print both results
 print("Recursive Inorder Traversal:", inorder_Recur)
 print("Iterative Inorder Traversal:", inorder_Iter)

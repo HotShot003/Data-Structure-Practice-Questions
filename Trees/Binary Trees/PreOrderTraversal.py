@@ -35,22 +35,18 @@ class BinaryTree:
         if not values:
             return None
         
-        # Create the root of the tree
         self.root = Node(values[0])
         queue = [self.root]
         idx = 1
         
-        # Use a queue to construct the tree level by level
         while idx < len(values):
             current = queue.pop(0)
             
-            # Add the left child
             if values[idx] != -1:
                 current.left = Node(values[idx])
                 queue.append(current.left)
             idx += 1
             
-            # Ensure there is still a right child to process
             if idx < len(values):
                 if values[idx] != -1:
                     current.right = Node(values[idx])
@@ -88,7 +84,6 @@ sol.insertLevelOrder(values=[1, 2, 3, 4, 5, 6, 7])
 preorder_Recur = []
 sol.PreorderTraversal_Recur(sol.root, preorder_Recur)
 
-# Perform iterative preorder traversal
 preorder_Iter = sol.PreorderTraversal_Iter(sol.root)
 
 # Print both results
