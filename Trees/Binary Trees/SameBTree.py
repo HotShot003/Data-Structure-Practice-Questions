@@ -50,13 +50,10 @@ class Tree:
 
 
 t = Tree()
-
 root1 = Node(1)    
 root1.left = Node(2)    
 root1.right = Node(3)
-
 root2 = Node(1)    
 root2.left = Node(2)    
 root2.right = Node(3)
-
 print(t.isSameTree(root2,root2))    
