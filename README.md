@@ -16,7 +16,7 @@ Each day, a new question will be added to the repository, covering various topic
 
 By consistently practicing, I aim to improve my understanding of data structures, algorithms, and problem-solving techniques.
 
-# Language Used :
+# Programming Language Used :
 
 ![Python](https://img.shields.io/badge/python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white) 
 
@@ -33,7 +33,6 @@ Each question will come with a detailed problem statement and a Python solution.
 # Contributing
 
 If you have any suggestions or improvements, feel free to create a pull request or open an issue.
-
 Contributions are welcome!
 
 # Acknowledgements
