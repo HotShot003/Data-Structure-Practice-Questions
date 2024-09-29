@@ -33,6 +33,7 @@ Each question will come with a detailed problem statement and a Python solution.
 # Contributing
 
 If you have any suggestions or improvements, feel free to create a pull request or open an issue.
+
 Contributions are welcome!
 
 # Acknowledgements
