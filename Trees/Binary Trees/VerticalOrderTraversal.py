@@ -15,7 +15,8 @@
 # Output: [[9],[3,15],[20],[7]]
 # Explanation:
 # Column -1: Only node 9 is in this column.
-# Column 0: Nodes 3 and 15 are in this column in that order from top to bottom.
+# Column 0: Nodes 3 and 15 are in this column i
+# n that order from top to bottom.
 # Column 1: Only node 20 is in this column.
 # Column 2: Only node 7 is in this column.
 # Example 2:
