@@ -135,7 +135,9 @@ sol.insertLevelOrder(values=[1,2,3,4,5,6,7])
 Postorder = []
 
 sol.PostorderTraversal(sol.root,Postorder)        
-print(Postorder)                          
+print(Postorder)    
+  
+                    
 print(sol.IterPostOrder(sol.root))
 
 print(sol.PostorderTraversal_oneStk(sol.root))
