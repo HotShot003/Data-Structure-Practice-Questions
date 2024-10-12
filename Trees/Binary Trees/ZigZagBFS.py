@@ -60,9 +60,7 @@ class BTree:
             f = not f
         return res
     
-
 tree = BTree()
-
 root = Node(1)
 root.left = Node(2)           
 root.right = Node(3)
