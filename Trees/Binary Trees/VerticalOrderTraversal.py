@@ -6,10 +6,7 @@
 
 # Return the vertical order traversal of the binary tree.
 
- 
-
 # Example 1:
-
 
 # Input: root = [3,9,20,null,null,15,7]
 # Output: [[9],[3,15],[20],[7]]
@@ -40,11 +37,10 @@
 # Explanation:
 # This case is the exact same as example 2, but with nodes 5 and 6 swapped.
 # Note that the solution remains the same since 5 and 6 are in the same location and should be ordered by their values.
- 
 
 # Constraints:
-
 # The number of nodes in the tree is in the range [1, 1000].
+
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
         self.val = val
