@@ -48,7 +48,6 @@ root.left.left = Node(1)
 root.left.right = Node(6)
 root.right.right = Node(14)
 
-# Search for a value in the BST
 result = search_bst(root, 6)
 if result:
     print(f"Found: {result.val}")
