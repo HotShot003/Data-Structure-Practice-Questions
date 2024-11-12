@@ -66,7 +66,6 @@ class Solution:
         if root is None:
             return
         
-        # Initialize a queue for level-order traversal
         queue = [root]
         
         while queue:
@@ -76,7 +75,6 @@ class Solution:
             # Print the current node's data
             print(current.data, end=" ")
             
-            # Add the left and right children to the queue
             if current.left:
                 queue.append(current.left)
             if current.right:
