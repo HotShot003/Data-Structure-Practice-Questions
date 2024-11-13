@@ -27,9 +27,6 @@
 # 1<=i<=20
 
 def  countNode(i):
-    
     res = 2 ** (i-1)
-    
     return res
-
-print(countNode(5))
+print(countNode(6))
