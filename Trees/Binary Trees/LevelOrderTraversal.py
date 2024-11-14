@@ -21,7 +21,6 @@
 
 # The number of nodes in the tree is in the range [0, 2000].
 # -1000 <= Node.val <= 1000
-
 from collections import deque
 class Node:
     def __init__(self,data):
@@ -55,9 +54,7 @@ class Solution :
         return res                
 
 
-# Example Usage
 if __name__ == "__main__":
-    # Create the binary tree [3, 9, 20, None, None, 15, 7]
     root = Node(3)
     root.left = Node(9)
     root.right = Node(20)
