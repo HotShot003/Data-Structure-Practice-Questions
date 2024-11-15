@@ -106,15 +106,12 @@ class BinaryTree:
         self.postorderTraversal(node.right, result)
         result.append(node.data)
 
-# Example Usage:
 # Sample Input: 1 2 3 -1 -1 -1 6 -1 -1
 values = [1, 2, 3, -1, -1, -1, 6]
 
-# Construct the binary tree
 tree = BinaryTree()
 tree.insertLevelOrder(values)
 
-# Perform traversals
 inorder_result = []
 preorder_result = []
 postorder_result = []
@@ -123,7 +120,6 @@ tree.inorderTraversal(tree.root, inorder_result)
 tree.preorderTraversal(tree.root, preorder_result)
 tree.postorderTraversal(tree.root, postorder_result)
 
-# Print the results
 print("In-order Traversal:", inorder_result)
 print("Pre-order Traversal:", preorder_result)
 print("Post-order Traversal:", postorder_result)
