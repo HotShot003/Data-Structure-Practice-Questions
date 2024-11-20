@@ -46,7 +46,7 @@ class Solution:
         :rtype: TreeNode
         """
         if root is None:
-            return TreeNode(val)  # Create a new node if we've reached a null position.
+            return TreeNode(val)  
         
         if val < root.val:
             root.left = self.insertIntoBST(root.left, val)  # Insert into the left subtree.
@@ -55,7 +55,6 @@ class Solution:
         
         return root
 
-# Helper function to print the tree in level-order for debugging
 def printTree(root):
     if not root:
         return []
@@ -69,12 +68,10 @@ def printTree(root):
             queue.append(current.right)
         else:
             result.append(None)
-    # Clean up trailing None values for display
     while result and result[-1] is None:
         result.pop()
     return result
 
-# Example Usage
 if __name__ == "__main__":
     # Example 1
     root = TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(7))
