@@ -14,15 +14,12 @@
 
 # Input: root = [4,2,7,1,3], val = 5
 # Output: []
- 
 
 # Constraints:
-
 # The number of nodes in the tree is in the range [1, 5000].
 # 1 <= Node.val <= 107
 # root is a binary search tree.
 # 1 <= val <= 107
-
 class Node:
     def __init__(s,val):
         s.val = val
@@ -40,7 +37,6 @@ def search_bst(root, val):
     else:
         return search_bst(root.right, val)
 
-# Create a binary search tree
 root = Node(8)
 root.left = Node(3)
 root.right = Node(10)
