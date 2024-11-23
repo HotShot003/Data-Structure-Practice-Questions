@@ -42,18 +42,16 @@ class Solution(object):
             return []
         
         right_view = []
-        queue = deque([root])  # Initialize queue with root node
+        queue = deque([root])  
         
         while queue:
             level_size = len(queue)
             for i in range(level_size):
                 node = queue.popleft()
                 
-                # If it's the rightmost node at the current level, add it to the result
                 if i == level_size - 1:
                     right_view.append(node.val)
                 
-                # Add the children to the queue, right first to ensure rightmost node is processed last
                 if node.right:
                     queue.append(node.right)
                 if node.left:
@@ -61,7 +59,6 @@ class Solution(object):
         
         return right_view
 
-# Example Usage
 if __name__ == "__main__":
     # Example 1:
     root = TreeNode(1)
