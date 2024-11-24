@@ -21,9 +21,6 @@
 
 # The number of nodes in the tree is in the range [0, 100].
 # -100 <= Node.val <= 100
-
-
-# Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, val=0, left=None, right=None):
         self.val = val
