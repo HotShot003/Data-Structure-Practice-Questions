@@ -22,9 +22,6 @@
 # Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
  
 
-# Constraints:
-
-# 0 <= s.length <= 5 * 104
 # s consists of English letters, digits, symbols and spaces.
 
 def subsequence(s):
@@ -38,8 +35,6 @@ def subsequence(s):
                 left += 1
             
             char_set.add(s[right])
-            max_length = max(max_length, right - left + 1)
-        
+            max_length = max(max_length, right - left + 1)        
         return max_length
-    
 print(subsequence('abcabcbb'))    
