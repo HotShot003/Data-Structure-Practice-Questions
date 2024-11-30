@@ -77,10 +77,6 @@ s.AddEleMid(3, 1)  # Add 3 at position 1
 s.AddEleMid(4, -1) # Add 4 at the start due to negative position
 s.AddEleMid(5, 10) # Add 5 at the end due to position greater than length
 s.AddEleMid(6)     # Add 6 at the end by default
-# print(s.head.next.next.prev.data)
+
 s.printDll()
-# # Print the list to verify
-# curr = s.head
-# while curr:
-#     print(curr.data, end=' <-> ' if curr.next else '\n')
-#     curr = curr.next
+
