@@ -20,12 +20,12 @@
 # 1 <= Node.val <= 107
 # root is a binary search tree.
 # 1 <= val <= 107
+
 class Node:
     def __init__(s,val):
         s.val = val
         s.left = None
-        s.right = None
-        
+        s.right = None     
 def search_bst(root, val):
     """Recursive search in a binary search tree."""
     if not root:
@@ -36,14 +36,12 @@ def search_bst(root, val):
         return search_bst(root.left, val)
     else:
         return search_bst(root.right, val)
-
 root = Node(8)
 root.left = Node(3)
 root.right = Node(10)
 root.left.left = Node(1)
 root.left.right = Node(6)
 root.right.right = Node(14)
-
 result = search_bst(root, 6)
 if result:
     print(f"Found: {result.val}")
