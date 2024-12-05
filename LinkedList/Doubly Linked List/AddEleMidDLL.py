@@ -73,10 +73,10 @@ s = Solution()
 s.AddEleMid(1)
 s.AddEleMid(2)
 s.AddEleMid(10)
-s.AddEleMid(3, 1)  # Add 3 at position 1
-s.AddEleMid(4, -1) # Add 4 at the start due to negative position
-s.AddEleMid(5, 10) # Add 5 at the end due to position greater than length
-s.AddEleMid(6)     # Add 6 at the end by default
+s.AddEleMid(3, 1)  
+s.AddEleMid(4, -1) 
+s.AddEleMid(5, 10) 
+s.AddEleMid(6)     
 
 s.printDll()
 
