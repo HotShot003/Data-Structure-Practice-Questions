@@ -67,7 +67,7 @@ class Solution:
             curr = curr.next
         
         print(f'[' + ', '.join(map(str, result)) + ']')
-        
+         
 # Example usage
 s = Solution()
 s.AddEleMid(1)
