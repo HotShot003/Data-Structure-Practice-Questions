@@ -83,7 +83,6 @@ def test_detectCycle():
 
     solution = Solution()
     
-    # Test case 1: No cycle
     head = create_linked_list([1,2,3,4,5,6,3], 2)
     cycle_start = solution.detectCycle(head)
     if cycle_start is None:
@@ -91,7 +90,6 @@ def test_detectCycle():
     else:
         print(f"Output: tail connects to node index {cycle_start.val}")
 
-    # Test case 2: Cycle exists, starts at index 1
     head = create_linked_list([3, 2, 0, -4], 1)
     cycle_start = solution.detectCycle(head)
     if cycle_start is None:
@@ -99,7 +97,6 @@ def test_detectCycle():
     else:
         print(f"Output: tail connects to node index {cycle_start.val}")
 
-    # Test case 3: Cycle exists, starts at index 0
     head = create_linked_list([1, 2], 0)
     cycle_start = solution.detectCycle(head)
     if cycle_start is None:
@@ -107,7 +104,6 @@ def test_detectCycle():
     else:
         print(f"Output: tail connects to node index {cycle_start.val}")
 
-    # Test case 4: Single node with no cycle
     head = create_linked_list([1], -1)
     cycle_start = solution.detectCycle(head)
     if cycle_start is None:
@@ -115,7 +111,6 @@ def test_detectCycle():
     else:
         print(f"Output: tail connects to node index {cycle_start.val}")
 
-    # Test case 5: Single node with a cycle
     head = create_linked_list([1], 0)
     cycle_start = solution.detectCycle(head)
     if cycle_start is None:
