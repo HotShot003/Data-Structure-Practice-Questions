@@ -55,7 +55,6 @@ def hasCycle(head):
     return True
 
 # Example usage:
-# Create a linked list [3, 2, 0, -4] with a cycle at position 1
 head = Node(3)
 second = Node(2)
 third = Node(0)
@@ -68,7 +67,6 @@ fourth.next = second  # Creates the cycle
 
 print(hasCycle(head))  # Output: True
 
-# Create a linked list [1, 2] with a cycle at position 0
 head = Node(1)
 second = Node(2)
 
@@ -77,7 +75,6 @@ second.next = head  # Creates the cycle
 
 print(hasCycle(head))  # Output: True
 
-# Create a linked list [1] with no cycle
 head = Node(1)
 
 print(hasCycle(head))  # Output: False
