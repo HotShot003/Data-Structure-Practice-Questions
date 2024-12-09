@@ -2,7 +2,9 @@
 
 ## What's Inside !
 
-- Comprehensive Practice Questions: Explore a wide range of questions categorized by difficulty levels. Each question is designed to target specific concepts in data structures and algorithms.
+- Comprehensive Practice Questions: Explore a wide range of questions categorized by difficulty levels. 
+
+- Each question is designed to target specific concepts in data structures and algorithms.
 
 - Detailed Solutions: Each question is accompanied by a detailed solution, including a step-by-step explanation of the thought process and code implementation.
 
