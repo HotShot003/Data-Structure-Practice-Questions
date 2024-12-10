@@ -1,4 +1,4 @@
-class Node:
+class DataNode:
     def __init__(self, data):
         self.data = data
         self.next = None
@@ -17,7 +17,7 @@ class Solution:
         return c
     
     def AddEleMid(self, data, pos=None):
-        t = Node(data)
+        t = DataNode(data)
         
         if pos is None:  # Default case, add at the end
             pos = self.lenDll()
