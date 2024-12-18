@@ -16,12 +16,6 @@
 # Input: asteroids = [8,-8]
 # Output: []
 # Explanation: The 8 and -8 collide exploding each other.
-# Example 3:
-
-# Input: asteroids = [10,2,-5]
-# Output: [10]
-# Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
- 
 
 # Constraints:
 
