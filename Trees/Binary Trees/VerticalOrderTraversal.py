@@ -50,25 +50,20 @@ class TreeNode(object):
 from collections import defaultdict, deque
 
 def verticalTraversal(root):
-    # Dictionary to hold the column as key and a list of (row, value) tuples as values
     column_table = defaultdict(list)
     
-    # Queue for BFS; each element is a tuple (node, row, column)
     queue = deque([(root, 0, 0)])
     
-    # Perform BFS
     while queue:
         node, row, col = queue.popleft()
         
         if node:
-            # Append the node's value along with its row and column to the column table
             column_table[col].append((row, node.val))
             
             # Add the left and right children with updated row and column values
             queue.append((node.left, row + 1, col - 1))
             queue.append((node.right, row + 1, col + 1))
     
-    # Sort the column_table by columns
     # For each column, sort by row first and by value second
     sorted_columns = sorted(column_table.keys())
     result = []
