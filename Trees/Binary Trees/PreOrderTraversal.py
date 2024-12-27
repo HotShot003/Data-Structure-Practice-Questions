@@ -69,8 +69,8 @@ class BinaryTree:
             
             if node:
                 res.append(node.data)
-                stk.append(node.right)  # Push right child first
-                stk.append(node.left)   # Push left child after to visit first
+                stk.append(node.right)  
+                stk.append(node.left)   
         
         return res
 sol = BinaryTree()
