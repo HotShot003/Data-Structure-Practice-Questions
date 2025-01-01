@@ -17,10 +17,6 @@
 # Output: [1]
  
 
-# Constraints:
-
-# The number of nodes in the tree is in the range [0, 100].
-# -100 <= Node.val <= 100
 class Node:
     def __init__(self, data):
         self.left = None
@@ -65,13 +61,11 @@ class BinaryTree:
         stk = [node]
         
         while stk:
-            node = stk.pop()
-            
+            node = stk.pop()          
             if node:
                 res.append(node.data)
                 stk.append(node.right)  
                 stk.append(node.left)   
-        
         return res
 sol = BinaryTree()
 sol.insertLevelOrder(values=[1, 2, 3, 4, 5, 6, 7])
